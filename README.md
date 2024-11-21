@@ -1,0 +1,15 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/3raEwwRA)
+# GP1
+ Game project 1 for GDIM31.
+
+FINAL SUBMISSION:
+This part of the project was the most challenging for me. I began to get overwhelmed by how all files were communicating with eachother and kept getting confused by whether or not a functino was in the Player/Enemy script or the GameController script.
+
+As working through, the first big roadbump I experienced was removing all enemies from the scene when I lose the game. Updated the list while you are adding and removing things from it really make it confusing. I decided to just write out the list on paper and physically iterate through it to see where the logic was getting confused. To avoid dealing with it all together, I decided to wait to empty the list till after deleted all the gameobjects. This makes sure I can iterate through the list without adjusting its size and getting an out of bounds error.
+
+The Week 7 topics were also very new to me. I don't fully understand how UI elemnets work and was having trouble getting the code to compile. Not knowing any of the functions or what I can actually do with the text/buttons made this challenging. I looked at the Unity documentation to figure out the capabilities. After that, the UI elements (especially the restart button) were pretty straight forward. Overall, I learned a lot from the game and overcame some important challenges. Learning how UI elements work as well as gaining a deeper understanding of loop logic was super important. 
+
+CHECK IN 1:
+This beginning part of the project proved to be fairly challenging. A reoccurring problem I had was understanding how components worked with the game object and how to edit them. As I has years of coding experience, understanding scope was not a problem, but understanding how to call on a objects transform component was interesting.This was the most challenging when implementing the GameController.PlayerHitEnemy() function. After using Unity's Documentation for GetComponent and looking at the W4L2 slides, I understood it.
+
+The Week 5 topics took a little longer to implement. When spawning enemies, I was trying to add them to the _enemies list but I was get a NullReference error for some reason. After some trial and error I realized that the _enemies list was initialized. After I did that, everything was all good. Setting the enemies' size and making them move wasn't that hard as I simply refernces my Player script to see how to did things there. Finally, Killing Enemies when they exit the screen was a little more complicated but not really a challenge. I understand pretty well how to iterate through things so all I had to do was follow the function calls and make sure I was doing those correctly. At first I called the TransformIsInWorldBounds() fuction on the enemy itself before realizing that it was a GameController function. After that realization, the killing and removing of the enemy was straightforward
